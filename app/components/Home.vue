@@ -1,8 +1,21 @@
 <template>
   <div class="big-header">
-    <h1>{{ message }}</h1>
-    <br />
-    <router-link class="button" to="/page">Go to Page</router-link>
+    <div class="logo">
+      <div class="logo-header">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <transition name="fade" appear>
+      <div class="title-header">
+        <h1>Le son que <br>vous aimez</h1>
+        <br />
+        <router-link class="button-header" to="/page">Découvrir</router-link>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -10,7 +23,7 @@
 export default {
   data() {
     return {
-      message: 'Hello Hetic'
+      
     };
   }
 };
