@@ -16,7 +16,12 @@
     <div id="containt">
         <div id="carrousel">
             <carousel>
-                <carousel-slide></carousel-slide>
+                <img src="https://placeimg.com/200/200/any?1">
+                <img src="https://placeimg.com/200/200/any?2">
+                <img src="https://placeimg.com/200/200/any?3">
+                <img src="https://placeimg.com/200/200/any?4">
+                <template slot="prev"><div class="prev">prev</div></template>
+                <template slot="next"><div class="next">next</div></template>
             </carousel>
         </div>
         <div class="containt-text">
@@ -80,6 +85,9 @@
                 color: #2869E8;
             }
         }
+        .owl-dots{
+            display: none;
+        }
 
     }
 }
@@ -111,7 +119,8 @@
 </style>
 
 <script>
+import carousel from 'vue-owl-carousel'
 export default {
-    
+    components: { carousel },
 }
 </script>
