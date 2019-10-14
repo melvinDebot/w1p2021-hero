@@ -15,14 +15,6 @@
     <!-- CONTAINT -->
     <div id="containt">
         <div id="carrousel">
-            <carousel>
-                <img src="https://placeimg.com/200/200/any?1">
-                <img src="https://placeimg.com/200/200/any?2">
-                <img src="https://placeimg.com/200/200/any?3">
-                <img src="https://placeimg.com/200/200/any?4">
-                <template slot="prev"><div class="prev">prev</div></template>
-                <template slot="next"><div class="next">next</div></template>
-            </carousel>
         </div>
         <div class="containt-text">
             <h2>Vivre par la photo</h2>
