@@ -22,7 +22,23 @@
 </template>
 
 <script>
+import { TweenMax, TimelineMax } from 'gsap'
 export default {
-    
+    mounted : function () {
+    var tl = new TimelineMax({});
+    tl.to('.main-singer', 1, {
+      y: 0
+    }, 'start')
+    .fromTo('.main-concert', 1, {
+      y: '-100%'
+    }, {
+      y:0
+    }, 'start+=0.1')
+    .fromTo('.main-info', 1, {
+      y: '-100%'
+    }, {
+      y:0
+    }, 'start+=0.2')
+  }
 };
 </script>

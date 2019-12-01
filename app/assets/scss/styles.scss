@@ -19,12 +19,13 @@ a{
   text-decoration: none;
   color: white;
   z-index: 100;
+  line-height: 47px;
 }
 
 //HOME
 .big-header {
   height: 100vh;
-  background-image: url('/assets/src/homeBackground.jpg');
+  background-image: url('/assets/src/background.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -134,11 +135,12 @@ h1{
 .main-singer{
   width: 100%;
   height: 100vh;
-  background-image: url('/assets/src/singer-1.png');
+  background-image: url('/assets/src/singer.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   font-size: $button;
   color: white;
+  transform: translateY(-100%);
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -147,7 +149,7 @@ h1{
 .main-concert{
   width: 100%;
   height: 100vh;
-  background-image: url('/assets/src/concert-img.JPG');
+  background-image: url('/assets/src/concept.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   font-size: $button;
@@ -157,10 +159,13 @@ h1{
   justify-content: center;
   align-items: center;
 }
+
 .main-info{
   width: 100%;
   height: 100vh;
-  background-color: gray;
+  background-image: url('/assets/src/info-concert.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   opacity: 0.75;
   font-size: $button;
   color: white;
@@ -174,7 +179,9 @@ h1{
 .back-Black{
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: #34343C;
+  position: relative;
+  z-index: 99;
 }
 .wavies > use{
   animation: waveAround 12s linear infinite;
@@ -183,6 +190,13 @@ h1{
   &:nth-child(3) { animation-delay:-4s; animation-duration:3s };
 }
 
+.text-singerr{
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
 @keyframes waveAround{
   0% { transform: translate(-90px , 0%) }
   100% { transform: translate(85px , 0%) }
@@ -280,6 +294,29 @@ h1{
   }
 }
 
+.section-contact{
+  display:  flex;
+  justify-content: space-around;
+  width: 100%;
+  color: #FFFFFF;
+
+  h2{
+    font-weight: bold;
+    width: 500px;
+    max-width: 100%;
+  }
+}
+.contact{
+  font-size: 24px;
+  font-weight: bold;
+  height: 150px;
+  
+  p{
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+}
+
 
 
 
@@ -317,6 +354,16 @@ h1{
   .back-Black .nav-button{
     position: absolute;
     bottom: 20px;
+
+  }
+  .section-contact{
+    display: flex;
+    flex-direction: column;
+
+    p{
+      margin-top: 30px;
+      text-align: center;
+    }
 
   }
 }

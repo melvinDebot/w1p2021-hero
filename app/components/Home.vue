@@ -11,7 +11,7 @@
     </div>
     <transition name="fade" appear>
       <div class="title-header">
-        <h1>Le son que <br>vous aimez</h1>
+        <h1>GOSPEL<br>SPIRIT</h1>
         <br />
         <router-link class="button-header" to="/page">Découvrir</router-link>
       </div>
@@ -20,11 +20,15 @@
 </template>
 
 <script>
+import TweenMax from "gsap"
 export default {
   data() {
     return {
       
     };
-  }
+  },
+
+  
+
 };
 </script>

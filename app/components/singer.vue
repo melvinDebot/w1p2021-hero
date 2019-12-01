@@ -12,6 +12,8 @@
     </div>
     </a>
     <div class="back-Black">
+      <!-- Text -->
+      <h2 class="text-singerr">CLIQUEZ SUR LES BULLES</h2>
       <!-- BALL -->
       <div id="singer-one">
       <div id="singer-ball" @click="show = !show">
@@ -37,6 +39,7 @@
         </transition>
       </div>
     </div>
+
     
     <!-- BALL -->
       <div class="nav-button">
@@ -61,6 +64,8 @@
         </svg>
       </div>
     </div>
+
+    
     
 </template>
 

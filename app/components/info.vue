@@ -12,24 +12,15 @@
 <div class="back-Black">
     <!-- CONTAINT -->
     <div class="section-info">
-        <h2>Ne ratez pas le prochain événement</h2>
-        <div class="formulaire-info">
-            <div class="info-1">
-                <p>Nom</p>
-                <input >
-                <p>Prénom</p>
-                <input>
+        <div class="section-contact">
+            <h2>Ne ratez pas le prochain événement</h2>
+            <div class="contact">
+                <p>9 rue jean macé, Fontenay sous bois</p>
+                <p>Gospel-spirit@gmail.com</p>
+                <p>06766275374</p>
             </div>
-            <p class="top">Téléphone</p>
-            <input  type="tel">
-            <p class="top">Mail</p>
-            <input  type="email">
-            <p class="top"> Ville</p>
-            <input>
-            <a href="/">
-                <button type="submit" class="submit">ENVOYEZ</button>
-            </a>
         </div>
+        
     </div>
     <!-- CONTAINT -->
     <div class="nav-button">

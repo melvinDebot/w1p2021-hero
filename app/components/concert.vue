@@ -1,6 +1,6 @@
 <template>
 <div class="main">
-<a href="/">
+<a href="/home">
       <div class="logo">
       <div class="logo-header">
         <span></span>
@@ -15,6 +15,7 @@
     <!-- CONTAINT -->
     <div id="containt">
         <div id="carrousel">
+            
         </div>
         <div class="containt-text">
             <h2>Vivre par la photo</h2>
@@ -60,11 +61,13 @@
     #carrousel{
     width: 656px;
     height: 382px;
-    border: 1px solid orange;
+    background-image: url('/assets/src/concept.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
     }
     .containt-text{
-        width: 409px;
-        height: 408px;
+        width: 509px;
+        
         h2{
             font-size: 38px;
             font-weight: bold;
@@ -111,8 +114,14 @@
 </style>
 
 <script>
-import carousel from 'vue-owl-carousel'
+
 export default {
-    components: { carousel },
+    data : {
+        slides: 5,
+        active: 1
+    },
+    methods : {
+        
+    }
 }
 </script>
